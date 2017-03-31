@@ -6,7 +6,6 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 
 
-
 // 创建任务
 // 编译sass文件
 gulp.task('compileSass',function(){
@@ -16,7 +15,7 @@ gulp.task('compileSass',function(){
 
 	// pipe管道方法
 	.pipe(sass({
-		outputStyle:'compact'
+		outputStyle:'expanded'
 	}))
 
 	// 错误信息处理，不会退出整个任务
@@ -30,5 +29,30 @@ gulp.task('compileSass',function(){
 
 // 监听sass文件修改，直接编译任务
 gulp.task('watchSass',function(){
+	gulp.watch('./src/sass/*.scss',['compileSass']);
+});
+
+
+//引入browser-sync
+var browserSync = require('browser-sync');
+
+// 使用
+// 创建任务
+gulp.task('server',function(){
+	browserSync({
+		// 启动服务器
+		// server:{
+		// 	baseDir:'./src/'
+		// },
+
+		// 服务器代理
+		proxy:'http://localhost/project1612/',
+
+		// 监听文件修改，自动刷新页面
+		files:['./src/**/*.html','./src/css/*.css','./src/**/*.php']
+	});
+
+
+	// 监听sass文件修改，编译sass
 	gulp.watch('./src/sass/*.scss',['compileSass']);
 })

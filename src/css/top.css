@@ -1,114 +1,490 @@
 @charset "UTF-8";
-body, h1, h2, h3, h4, h5, h6, p, dl, dd, ul, ol, pre, form, img, input, textarea, th, td, select { margin: 0; padding: 0; }
+body, h1, h2, h3, h4, h5, h6, p, dl, dd, ul, ol, pre, form, img, input, textarea, th, td, select {
+  margin: 0;
+  padding: 0;
+}
 
-em { font-style: normal; }
+em {
+  font-style: normal;
+}
 
-li { list-style: none; }
+li {
+  list-style: none;
+}
 
-a { text-decoration: none; font-size: 12px; }
+a {
+  text-decoration: none;
+  font-size: 12px;
+}
 
-img { border: none; }
+img {
+  border: none;
+}
 
-table { border-collapse: collapse; }
+table {
+  border-collapse: collapse;
+}
 
-textarea { resize: none; overflow: hidden; }
+textarea {
+  resize: none;
+  overflow: hidden;
+}
 
-.clear:after { content: ''; display: block; clear: both; }
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 
-.wrapper { width: 1200px; margin: 0 auto; }
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
 
-body { color: #555; font-size: 12px; font-family: "宋体"; }
+body {
+  color: #555;
+  font-size: 12px;
+  font-family: "宋体";
+}
 
-.top { background: #ddd; width: 100%; min-width: 1200px; height: 30px; }
+.top {
+  background: #ddd;
+  width: 100%;
+  min-width: 1200px;
+  height: 30px;
+}
 
-.top .top_l { float: left; }
+.top .top_l {
+  float: left;
+}
 
-.top .top_l h4 { float: left; line-height: 30px; display: block; font-size: 14px; }
+.top .top_l h4 {
+  float: left;
+  line-height: 30px;
+  display: block;
+  font-size: 14px;
+}
 
-.top .top_l span { line-height: 30px; float: left; }
+.top .top_l span {
+  line-height: 30px;
+  float: left;
+}
 
-.top .top_l span:hover { cursor: pointer; }
+.top .top_l span:hover {
+  cursor: pointer;
+}
 
-.top .top_l span div .area { display: none; }
+.top .top_l span div .area {
+  display: none;
+}
 
-.top .top_l p { float: left; line-height: 30px; margin-left: 10px; }
+.top .top_l p {
+  float: left;
+  line-height: 30px;
+  margin-left: 10px;
+}
 
-.top .top_l p a:hover { cursor: pointer; color: #d22d2d; }
+.top .top_l p a:hover {
+  cursor: pointer;
+  color: #d22d2d;
+}
 
-.top .help { float: right; line-height: 30px; }
+.top .help {
+  float: right;
+  line-height: 30px;
+}
 
-.top .help li { cursor: pointer; float: left; margin-left: 10px; }
+.top .help li {
+  cursor: pointer;
+  float: left;
+  margin-left: 10px;
+}
 
-.top .help li:hover a { color: #d22d2d; }
+.top .help li:hover a {
+  color: #d22d2d;
+}
 
-.top .help li a { color: #555; }
+.top .help li a {
+  color: #555;
+}
 
-.top .help li i { padding-right: 5px; }
+.top .help li i {
+  padding-right: 5px;
+}
 
-.top .help .EC { position: relative; }
+.top .help .EC {
+  position: relative;
+}
 
-.top .help .EC:hover ul { display: block; }
+.top .help .EC:hover ul {
+  display: block;
+}
 
-.top .help .EC ul { display: none; width: 76px; background: #fff; border: 1px solid #ddd; border-top: none; position: absolute; top: 30px; left: 10px; }
+.top .help .EC ul {
+  display: none;
+  width: 76px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
 
-.top .help .EC ul li { text-align: center; }
+.top .help .EC ul li {
+  text-align: center;
+}
 
-.top .help .EC ul li span:hover { color: blue; }
+.top .help .EC ul li span:hover {
+  color: blue;
+}
 
-.top .main .dog { float: left; }
+.top .main .dog {
+  float: left;
+}
 
-.top .main .search_fl { float: left; margin: 35px 0 0 80px; }
+.top .main .search_fl {
+  float: left;
+  margin: 35px 0 0 80px;
+}
 
-.top .main .search_fl .on { position: relative; }
+.top .main .search_fl .on {
+  position: relative;
+}
 
-.top .main .search_fl .on input { width: 400px; height: 30px; border: 2px solid green; outline: mediumaquamarine; font-size: 18px; }
+.top .main .search_fl .on input {
+  width: 400px;
+  height: 30px;
+  border: 2px solid green;
+  outline: mediumaquamarine;
+  font-size: 18px;
+}
 
-.top .main .search_fl .on button { width: 60px; height: 34px; position: absolute; left: 402px; border: 2px solid green; cursor: pointer; outline: mediumaquamarine; }
+.top .main .search_fl .on button {
+  width: 60px;
+  height: 34px;
+  position: absolute;
+  left: 402px;
+  border: 2px solid green;
+  cursor: pointer;
+  outline: mediumaquamarine;
+}
 
-.top .main .search_fl .search_hot { margin-top: 10px; }
+.top .main .search_fl .search_hot {
+  margin-top: 10px;
+}
 
-.top .main .search_fl .search_hot .active { color: red; }
+.top .main .search_fl .search_hot .active {
+  color: red;
+}
 
-.top .main .car { float: right; background: #C1CED6; padding: 5px; border-radius: 15px; margin: 36px 210px 0 0; }
+.top .main .car {
+  float: right;
+  background: #C1CED6;
+  padding: 5px;
+  border-radius: 15px;
+  margin: 36px 210px 0 0;
+}
 
-.top .main .car i { font-size: 20px; }
+.top .main .car i {
+  font-size: 20px;
+}
 
-.top .main .car a { font-size: 20px; }
+.top .main .car a {
+  font-size: 20px;
+}
 
-.top .main .car a:hover { color: red; }
+.top .main .car a:hover {
+  color: red;
+}
 
-.top .Nav .NavAll .mainFool { margin-top: 16px; }
+.top .Nav .NavAll .mainFool {
+  margin-top: 16px;
+}
 
-.top .Nav .NavAll .mainFool .pets { width: 100px; display: block; position: relative; text-align: center; heigth: 35px; border: 1px solid #E1E1E1; background: #fb6634; float: left; }
+.top .Nav .NavAll .mainFool .active {
+  background: #fb6634;
+}
 
-.top .Nav .NavAll .mainFool .pets ul { position: absolute; top: 20px; }
+.top .Nav .NavAll .mainFool .pets {
+  width: 100px;
+  display: block;
+  position: relative;
+  text-align: center;
+  heigth: 35px;
+  border: 1px solid #E1E1E1;
+  float: left;
+}
 
-.top .Nav .NavAll .mainFool .pets ul .pet-dog { border-bottom: 1px dashed; width: 200px; height: 180px; }
+.top .Nav .NavAll .mainFool .pets h2 {
+  heigth: 30px;
+  line-height: 30px;
+}
 
-.top .Nav .NavAll .mainFool .pets ul .pet-dog a { display: block; width: 63px; height: 63px; overflow: hidden; background: url("../img/pet.png"); position: absolute; top: 40px; left: 65px; }
+.top .Nav .NavAll .mainFool .pets ul {
+  display: none;
+  position: absolute;
+  top: 20px;
+}
 
-.top .Nav .NavAll .mainFool .pets ul .pet-dog p { position: absolute; top: 115px; left: 50px; }
+.top .Nav .NavAll .mainFool .pets ul .pet-dog {
+  border-bottom: 1px dashed;
+  width: 200px;
+  height: 180px;
+}
 
-.top .Nav .NavAll .mainFool .pets ul .pet-dog span { position: absolute; top: 130px; left: 45px; width: 100px; display: block; height: 30px; background: yellow; border: 1px solid; text-align: center; line-height: 30px; }
+.top .Nav .NavAll .mainFool .pets ul .pet-dog a {
+  display: block;
+  width: 63px;
+  height: 63px;
+  overflow: hidden;
+  background: url("../img/pet.png");
+  position: absolute;
+  top: 40px;
+  left: 65px;
+}
 
-.top .Nav .NavAll .mainFool .pets ul .pet-dog img { position: absolute; top: 35px; left: 130px; }
+.top .Nav .NavAll .mainFool .pets ul .pet-dog p {
+  position: absolute;
+  top: 115px;
+  left: 50px;
+}
 
-.top .Nav .NavAll .mainFool .pets ul .pet-cat { width: 200px; height: 180px; position: relative; }
+.top .Nav .NavAll .mainFool .pets ul .pet-dog span {
+  position: absolute;
+  top: 130px;
+  left: 45px;
+  width: 100px;
+  display: block;
+  height: 30px;
+  background: yellow;
+  border: 1px solid;
+  text-align: center;
+  line-height: 30px;
+}
 
-.top .Nav .NavAll .mainFool .pets ul .pet-cat a { display: block; width: 63px; height: 63px; overflow: hidden; background: url("../img/pet.png") 0 -63px; position: absolute; top: 40px; left: 65px; }
+.top .Nav .NavAll .mainFool .pets ul .pet-dog img {
+  position: absolute;
+  top: 35px;
+  left: 130px;
+}
 
-.top .Nav .NavAll .mainFool .pets ul .pet-cat p { position: absolute; top: 115px; left: 50px; }
+.top .Nav .NavAll .mainFool .pets ul .pet-cat {
+  width: 200px;
+  height: 180px;
+  position: relative;
+}
 
-.top .Nav .NavAll .mainFool .pets ul .pet-cat span { position: absolute; top: 130px; left: 45px; width: 100px; display: block; height: 30px; background: yellow; border: 1px solid; text-align: center; line-height: 30px; }
+.top .Nav .NavAll .mainFool .pets ul .pet-cat a {
+  display: block;
+  width: 63px;
+  height: 63px;
+  overflow: hidden;
+  background: url("../img/pet.png") 0 -63px;
+  position: absolute;
+  top: 40px;
+  left: 65px;
+}
 
-.top .Nav .NavAll .mainFool .pets ul .pet-cat img { position: absolute; top: 35px; left: 130px; }
+.top .Nav .NavAll .mainFool .pets ul .pet-cat p {
+  position: absolute;
+  top: 115px;
+  left: 50px;
+}
 
-.top .Nav .NavAll .mainFool .fenlei { width: 100px; display: block; float: left; position: relative; text-align: center; heigth: 35px; border: 1px solid #E1E1E1; }
+.top .Nav .NavAll .mainFool .pets ul .pet-cat span {
+  position: absolute;
+  top: 130px;
+  left: 45px;
+  width: 100px;
+  display: block;
+  height: 30px;
+  background: yellow;
+  border: 1px solid;
+  text-align: center;
+  line-height: 30px;
+}
 
-.top .Nav .NavAll .mainFool .fenlei h2 { font-size: 18px; padding-right: 17px; }
+.top .Nav .NavAll .mainFool .pets ul .pet-cat img {
+  position: absolute;
+  top: 35px;
+  left: 130px;
+}
 
-.top .Nav .NavAll .mainFool .fenlei .fa-angle-down { position: absolute; top: 1px; left: 84px; font-size: 20px; }
+.top .Nav .NavAll .mainFool .fenlei {
+  width: 100px;
+  display: block;
+  float: left;
+  position: relative;
+  heigth: 35px;
+  border: 1px solid #E1E1E1;
+}
 
-.top .Nav .NavAll .mainFool .fenlei ul { display: none; }
+.top .Nav .NavAll .mainFool .fenlei h2 {
+  padding-right: 17px;
+  heigth: 30px;
+  line-height: 30px;
+  padding-left: 5px;
+}
 
-.top .Nav .NavAll .mainFool .shopping-Nav { float: left; margin-left: 40px; }
+.top .Nav .NavAll .mainFool .fenlei .fa-angle-down {
+  position: absolute;
+  top: 6px;
+  left: 84px;
+  font-size: 20px;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul {
+  position: absolute;
+  top: 30px;
+  left: -100px;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li {
+  width: 200px;
+  height: 50px;
+  border-top: 1px solid green;
+  border-bottom: 1px solid green;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 {
+  line-height: 50px;
+  position: relative;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .qian {
+  background: url("../img/bg.png") 17px -1280px;
+  display: block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 12px;
+  left: 0px;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .f-a {
+  float: left;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .f-a a {
+  margin-left: 18px;
+  font-size: 18px;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .f-a a:hover {
+  color: blue;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .f-a i {
+  font-size: 14px;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .f-b {
+  float: left;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .f-b a {
+  margin-left: 18px;
+  font-size: 18px;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .f-b a:hover {
+  color: blue;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .f-b i {
+  font-size: 14px;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .FootAll {
+  display: none;
+  float: left;
+  position: absolute;
+  left: 200px;
+  width: 570px;
+  height: 480px;
+  border: 1px solid #56e656;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .FootAll .main-foot {
+  border-bottom: 1px dashed  #807878;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .FootAll .main-foot img {
+  vertical-align: middle;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .FootAll .main-foot .foot-git {
+  margin-left: 30px;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .FootAll .breed {
+  border-bottom: 1px dashed #807878;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .FootAll .breed .breed-jinkou {
+  float: left;
+  margin-left: 20px;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .FootAll .breed .breed-jinkou a {
+  padding-left: 58px;
+  color: #53aa5b;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .FootAll .breed .breed-jinkou img {
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .FootAll .breed .breed-beifen {
+  float: left;
+}
+
+.top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .FootAll .breed .breed-beifen a {
+  font-size: 18px;
+  margin-left: 3px;
+  font-size: 13px;
+  color: #807878;
+}
+
+.top .Nav .NavAll .mainFool .shopping-Nav {
+  float: left;
+  margin-left: 40px;
+}
+
+.top .Nav .NavAll .mainFool .shopping-Nav li {
+  float: left;
+  position: relative;
+}
+
+.top .Nav .NavAll .mainFool .shopping-Nav li:hover i {
+  transform: rotate(360deg);
+}
+
+.top .Nav .NavAll .mainFool .shopping-Nav li i {
+  background: url("../img/bg.png") 17px -1280px;
+  display: block;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 7px;
+  left: 13px;
+  transition: 1s;
+}
+
+.top .Nav .NavAll .mainFool .shopping-Nav li a {
+  margin-left: 10px;
+  display: block;
+  width: 110px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.top .Nav .NavAll .mainFool .shopping-Nav li a:hover {
+  color: #4d9b35;
+}

@@ -1,0 +1,58 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, p, dl, dd, ul, ol, pre, form, img, input, textarea, th, td, select {
+  margin: 0;
+  padding: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+img {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  color: #555;
+  font-size: 12px;
+  font-family: "宋体";
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel img {
+  position: absolute;
+  width: 770px;
+  height: 360px;
+}
