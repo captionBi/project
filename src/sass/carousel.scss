@@ -18,12 +18,49 @@ textarea { resize: none; overflow: hidden; }
 .wrapper {width:1200px; margin: 0 auto; }
 
 body { color: #555; font-size: 12px; font-family: "宋体"; }
-
-.carousel{
+.Carousel{
     position: relative;
-    img{
-        position: absolute;
-        width:770px;
-        height: 360px;
+    width:100%;
+    min-width: 1200px;
+    .CarouselImg{
+        position: relative;
+        ul{
+             width:770px;
+            height: 360px;
+            li{
+                position: absolute;
+                 img{
+                    width:770px;
+                    height: 360px;
+                }
+            }
+        }
+       
+       
     }
+
+        .page{
+            position: absolute;
+            top: 315px;
+            left: 271px;
+            span{
+                display: block;
+                float: left;
+                width: 30px;
+                height: 30px;
+                margin-left: 10px;
+                font-size: 20px;
+                background: #ccc;
+                border-radius: 15px;
+                text-align: center;
+                line-height: 30px;
+                &:hover{
+                    background: white;
+                }
+            }
+            .active{
+                 background: white;
+            }
+        }
+    
 }

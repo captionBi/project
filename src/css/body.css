@@ -1,0 +1,120 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, p, dl, dd, ul, ol, pre, form, img, input, textarea, th, td, select {
+  margin: 0;
+  padding: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+img {
+  border: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  color: #555;
+  font-size: 12px;
+  font-family: "微软雅黑";
+}
+
+.body .crazy {
+  width: 330px;
+  height: 460px;
+  text-align: center;
+  background: #ff827f;
+  float: left;
+}
+
+.body .crazy span {
+  margin-top: 35px;
+  display: block;
+  font-size: 18px;
+  color: #fff;
+}
+
+.body .crazy h2 {
+  margin-top: 35px;
+  font-size: 28px;
+  color: #fff;
+}
+
+.body .crazy div {
+  margin-top: 35px;
+  font-size: 48px;
+  color: #fff;
+}
+
+.body .crazy i {
+  margin-top: 45px;
+  display: block;
+  font-size: 18px;
+  color: #fff;
+}
+
+.body .tab {
+  float: left;
+  width: 870px;
+  height: 460px;
+  border: 1px solid #dddddd;
+  box-sizing: border-box;
+}
+
+.body .tab .title {
+  border-bottom: 1px dashed;
+}
+
+.body .tab .title span {
+  float: left;
+  display: block;
+  text-align: center;
+  width: 120px;
+  height: 60px;
+  line-height: 25px;
+  text-decoration: line-through;
+}
+
+.body .tab .content .lei {
+  width: 217px;
+  height: 400px;
+  box-sizing: border-box;
+}
+
+.body .tab .content .lei span {
+  color: red;
+}
+
+.body .tab .content .lei .biaoti {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

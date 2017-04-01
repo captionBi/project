@@ -47,12 +47,53 @@ body {
   font-family: "宋体";
 }
 
-.carousel {
+.Carousel {
+  position: relative;
+  width: 100%;
+  min-width: 1200px;
+}
+
+.Carousel .CarouselImg {
   position: relative;
 }
 
-.carousel img {
-  position: absolute;
+.Carousel .CarouselImg ul {
   width: 770px;
   height: 360px;
+}
+
+.Carousel .CarouselImg ul li {
+  position: absolute;
+}
+
+.Carousel .CarouselImg ul li img {
+  width: 770px;
+  height: 360px;
+}
+
+.Carousel .page {
+  position: absolute;
+  top: 315px;
+  left: 271px;
+}
+
+.Carousel .page span {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  font-size: 20px;
+  background: #ccc;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.Carousel .page span:hover {
+  background: white;
+}
+
+.Carousel .page .active {
+  background: white;
 }

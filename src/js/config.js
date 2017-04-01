@@ -22,8 +22,8 @@ requirejs.config({
 // 在requireJS中，一个模块就是一个js文件
 // 引入模块的路径：
 requirejs(['jquery','index','top','carousel'],function($,index,top,carousel){
-	// var oTop=new top();
-	// oTop.init();
+	var oTop=new top();
+	oTop.init();
 	 var oCarousel = new carousel();
          oCarousel.init();
 	

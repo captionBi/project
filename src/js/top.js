@@ -28,7 +28,7 @@ define(['jquery','template'],function($,template){
     Top.prototype.template={
         top:template.compile(
             ` <div class="top">
-                <div class="wrapper clear">
+                <div class="wrapper clear top-t">
                     <div class="top_l">
                             <h4>送至：</h4>
                             <span>重庆
