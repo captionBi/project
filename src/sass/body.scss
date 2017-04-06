@@ -20,6 +20,7 @@ textarea { resize: none; overflow: hidden; }
 body { color: #555; font-size: 12px; font-family: "微软雅黑"; }
 
 .body{
+    margin-top:30px;
     .crazy{
         width:330px;
         height:460px;
@@ -64,21 +65,79 @@ body { color: #555; font-size: 12px; font-family: "微软雅黑"; }
                 width:120px;
                 height:60px;
                 line-height:25px;
-                text-decoration: line-through;
+                h4{
+                    .red-xian{
+                        width:80px;
+                        height:2px;
+                        background:red;
+                        margin-left:20px;
+                        margin-top:8px;
+                        display:none;
+                    }
+                }
             }
         }
         .content{
-            .lei{
-                width:217px;
+              overflow: hidden;
                 height:400px;
-                box-sizing:border-box;
-                span{
-                    color:red;
-                }
-                .biaoti{
-                    white-space:nowrap;
-                    overflow:hidden;
-                    text-overflow:ellipsis;
+            .content-l{
+                .lei{
+                 
+                    float:left;
+                    margin: 0 30px 0 30px;
+                    width:217px;
+                    height:400px;
+                    box-sizing:border-box;
+                    img{
+                        margin-left: 50px;
+                        margin-top: 20px;
+                    }
+                    .tuijian{
+                        color:red;
+                        margin-top:20px;
+                        display:block;
+                    }
+                    .biaoti{
+                        white-space:nowrap;
+                        overflow:hidden;
+                        text-overflow:ellipsis;
+                         margin-top:10px;
+                    }
+                    .price{
+                         margin-top:10px;
+                        span:first-child{
+                            color:red;
+                            font-size: 18px;
+                        }
+                        span:last-child{
+                              color:#ccc;
+                            font-size:12px;
+                            text-decoration: line-through;
+                            margin-left:10px;
+                        }
+                    }
+                    .gang{
+                        width:217px;
+                        height:5px;
+                        margin-top:20px;
+                        background:#f9752d;
+                        outline: mediumaquamarine;
+                    }
+                    a{  
+                        display:block;
+                        width:100px;
+                        height:30px;
+                         margin-top:20px;
+                         background:#f9752d;
+                         color:white;
+                        outline: mediumaquamarine;
+                        border:none;
+                        border-radius: 15px;
+                        cursor: pointer;
+                        text-align:center;
+                        line-height:30px;
+                        margin-left:50px;
+                    }
                 }
             }
         }

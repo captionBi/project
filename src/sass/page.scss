@@ -1,0 +1,147 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, p, dl, dd, ul, ol, pre, form, img, input, textarea, th, td, select { margin: 0; padding: 0; }
+
+em { font-style: normal; }
+
+li { list-style: none; }
+
+a { text-decoration: none;  font-size: 12px; }
+
+img { border: none; }
+
+table { border-collapse: collapse; }
+
+textarea { resize: none; overflow: hidden; }
+
+.clear:after { content: ''; display: block; clear: both; }
+
+.wrapper {width:1200px; margin: 0 auto; }
+
+body { color: #555; font-size: 12px; font-family: "微软雅黑"; }
+
+.page{
+    .wrapper{
+        .page_l{
+            width:430px;
+             float:left;
+            .page_l_img{
+                float:left;
+                margin-left:55px;
+                img{
+                    width:300px;
+                    height:300px;
+                }
+            }
+            .page_l_t{
+                float:left;
+                .pre{
+                    float:left;
+                    height:100px;
+                    width:10px;
+                    text-align:center;
+                    background:#ccc;
+                    i{
+                        margin-top:50px;
+                    }
+                }
+                .small_p{
+                    float:left;
+                   width:400px;
+                   .oborder{
+                        li{
+                            float:left;
+                            margin-left:10px;
+                        }
+                   }
+                }
+                .next{
+                    float:left;
+                    height:100px;
+                    width:10px;
+                    text-align:center;
+                    background:#ccc;
+                
+                    i{
+                        margin-top:50px;
+
+                    }
+                }
+            }
+        }
+
+        .page_r{
+            float:left;
+            width:400px;
+            height:400px;
+            background:#fcfcfc;
+            padding-left: 30px;
+            .page_tit{
+                font-size:32px;
+                margin-top:30px;
+            }
+            .page_olsprice{
+                font-size:16px;
+                 margin-top:30px;
+                 display:block;
+                span{
+                     text-decoration: line-through;
+                      color:#ccc;
+                }
+            }
+            .page_price{
+                 margin-top:30px;
+                 font-size:20px;
+                span{
+                    color:red;
+                }
+            }
+            .wonto{
+                 font-size:20px;
+                 margin-top:30px;
+                  display:block;
+            }
+            .won{
+                width:80px;
+                height:24px;
+                border:1px solid #ccc;
+
+                .del{
+                    float:left;
+                    display:block;
+                    width:10px;
+                    height:24px;
+                    text-align:center;
+                    font-size:15px;
+                    background:#ccc;
+                    cursor: pointer;
+                }
+                input{
+                    float:left;
+                    width:56px;
+                    height:20px;
+                     text-align:center;
+                }
+                .add{
+                    float:left;
+                    display:block;
+                    width:10px;
+                    height:24px;
+                    text-align:center;
+                    font-size:15px;
+                    background:#ccc;
+                    cursor: pointer;
+                }
+            }
+
+            .shoppingcar{
+                width:120px;
+                height:50px;
+                outline: mediumaquamarine;
+                border:none;
+                margin-top:30px;
+                cursor: pointer;
+            }
+
+        }
+    }
+}

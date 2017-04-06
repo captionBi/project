@@ -1,0 +1,83 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, p, dl, dd, ul, ol, pre, form, img, input, textarea, th, td, select { margin: 0; padding: 0; }
+
+em { font-style: normal; }
+
+li { list-style: none; }
+
+a { text-decoration: none; color: blue; font-size: 12px; }
+
+img { border: none; }
+
+table { border-collapse: collapse; }
+
+textarea { resize: none; overflow: hidden; }
+
+.clear:after { content: ''; display: block; clear: both; }
+
+.wrap { width: 1200px; margin: 0 auto; }
+
+body { color: #555; font-size: 12px; font-family: "宋体"; }
+
+.footer {
+  width: 100%;
+  float: left;
+  background: white;
+  border-top: 1px solid #ccc;
+  margin-top: 35px; }
+  .footer .wire {
+    border-bottom: 1px solid #ccc; }
+  .footer .footer-left {
+    float: left;
+    margin-top: 20px; }
+    .footer .footer-left .f_l {
+      width: 100px;
+      margin-left: 30px;
+      float: left; }
+      .footer .footer-left .f_l h3 {
+        line-height: 30px;
+        font-size: 16px; }
+        .footer .footer-left .f_l h3 a {
+          display: block;
+          color: #333; }
+      .footer .footer-left .f_l ul {
+        font-size: 14px;
+        line-height: 30px; }
+        .footer .footer-left .f_l ul li a {
+          color: #333; }
+  .footer .footer-right {
+    float: right; }
+    .footer .footer-right .f_r {
+      margin-top: 10px;
+      float: left;
+      width: 172px;
+      height: 225px;
+      overflow: hidden;
+      padding: 25px 10px 0px 10px;
+      border-left: 1px solid #cbcdcc; }
+       .footer .footer-right a{
+          position: relative;
+          top: 0px;
+          left: 45px;
+       }
+      .footer .footer-right .gif{
+        float: left;
+        margin-left: 7px;
+      }
+      .footer .footer-right .f_r h3 {
+        text-align: center; }
+         .footer .footer-right .f_r img{margin-top: 10px;}
+  .footer .copyright {
+    text-align: center;
+    margin-top: 50px; }
+    .footer .copyright div .c_r_1 {
+      line-height: 30px;
+      color: #666666; }
+    .footer .copyright div .c_r_2 {
+      line-height: 30px;
+      color: #333; }
+    .footer .copyright div .aa {
+      margin: 10px 0;
+      display: block; }
+      .footer .copyright div .aa img {
+        display: inline-block; }

@@ -6,8 +6,7 @@ requirejs.config({
 	// 格式：别名:真实路径
 	paths:{
 		'jquery':'..//lib/jquery-3.1.1',
-		 'template':'../lib/template-debug',
-		'carousel':'carousel'
+		 'template':'../lib/template-debug'
 
 	},
 	shim:{
@@ -21,10 +20,24 @@ requirejs.config({
 // 引入其他模块
 // 在requireJS中，一个模块就是一个js文件
 // 引入模块的路径：
-requirejs(['jquery','index','top','carousel'],function($,index,top,carousel){
-	var oTop=new top();
-	oTop.init();
-	 var oCarousel = new carousel();
-         oCarousel.init();
+requirejs(['jquery','top','carousel','body','page','footer'],function($,top,carousel,body,page,footer){
+	// var oTop=new top();
+	// 	oTop.init();
+
+	// var oCarousel = new carousel();
+ //         oCarousel.init();
+
+ //    var oBody=new body();
+ //    	oBody.show();
+
+
+
+    	
+
+ 	 var oPage=new page();
+         oPage.init();
+
+
+
 	
 });

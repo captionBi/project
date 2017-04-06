@@ -47,6 +47,10 @@ body {
   font-family: "微软雅黑";
 }
 
+.body {
+  margin-top: 30px;
+}
+
 .body .crazy {
   width: 330px;
   height: 460px;
@@ -100,21 +104,84 @@ body {
   width: 120px;
   height: 60px;
   line-height: 25px;
-  text-decoration: line-through;
 }
 
-.body .tab .content .lei {
+.body .tab .title span h4 .red-xian {
+  width: 80px;
+  height: 2px;
+  background: red;
+  margin-left: 20px;
+  margin-top: 8px;
+  display: none;
+}
+
+.body .tab .content {
+  overflow: hidden;
+  height: 400px;
+}
+
+.body .tab .content .content-l .lei {
+  float: left;
+  margin: 0 30px 0 30px;
   width: 217px;
   height: 400px;
   box-sizing: border-box;
 }
 
-.body .tab .content .lei span {
-  color: red;
+.body .tab .content .content-l .lei img {
+  margin-left: 50px;
+  margin-top: 20px;
 }
 
-.body .tab .content .lei .biaoti {
+.body .tab .content .content-l .lei .tuijian {
+  color: red;
+  margin-top: 20px;
+  display: block;
+}
+
+.body .tab .content .content-l .lei .biaoti {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-top: 10px;
+}
+
+.body .tab .content .content-l .lei .price {
+  margin-top: 10px;
+}
+
+.body .tab .content .content-l .lei .price span:first-child {
+  color: red;
+  font-size: 18px;
+}
+
+.body .tab .content .content-l .lei .price span:last-child {
+  color: #ccc;
+  font-size: 12px;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.body .tab .content .content-l .lei .gang {
+  width: 217px;
+  height: 5px;
+  margin-top: 20px;
+  background: #f9752d;
+  outline: mediumaquamarine;
+}
+
+.body .tab .content .content-l .lei a {
+  display: block;
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+  background: #f9752d;
+  color: white;
+  outline: mediumaquamarine;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 50px;
 }
