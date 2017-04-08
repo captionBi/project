@@ -8,25 +8,23 @@ define(['jquery','template'],function($,template){
                  $('body').append(this.template.carousel());
 
               
-                var $CarouselImg = $('.CarouselImg ul');
-                var $numLi=$('.CarouselFooter ul li')
-
-
+               
+                var $span=$('.page span')
                 var $li = $('.CarouselImg ul li')
                 var index=0;
                 var len=$li.length;
 
                 $li.fadeOut(0).eq(index).fadeIn(0);
-                $numLi.eq(index).addClass('active')
+                $span.eq(index).addClass('active')
                 function rollOne(){
                     if(index <len-1){
                     $li.eq(index).fadeOut(600).next().fadeIn(600);
-                    $numLi.eq(index+1).addClass('active').siblings().removeClass('active');
+                    $span.eq(index+1).addClass('active').siblings().removeClass('active');
                     index++;
                 }else if(index == len-1){
                         $li.eq(index).fadeOut(600).siblings().eq(0).fadeIn(600);
                         index=0;
-                        $numLi.eq(index).addClass('active').siblings().removeClass('active');
+                        $span.eq(index).addClass('active').siblings().removeClass('active');
                     }
                 }
 

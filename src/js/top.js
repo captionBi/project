@@ -50,9 +50,9 @@ define(['jquery','template'],function($,template){
                     </div>
 
                     <ul class="help">
-                        <li><a href="#">[登录]</a></li>
-                        <li><a href="#">[注册]</a></li>
-                        <li><i class="fa fa-shopping-cart" aria-hidden="true"></i><a href="#">购物车(<em>0</em>)</a></li>
+                        <li><a href="login.html">[登录]</a></li>
+                        <li><a href="reg.html">[注册]</a></li>
+                        <li><i class="fa fa-shopping-cart" aria-hidden="true"></i><a href="shoppingcar.html">购物车(<em>0</em>)</a></li>
                         <li class="EC">
                             <i class="fa fa-user" aria-hidden="true"></i>
                             <a href="#">我的E宠</a>

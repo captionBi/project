@@ -223,7 +223,8 @@ body {
 .top .Nav .NavAll .mainFool .pets ul {
   display: none;
   position: absolute;
-  top: 20px;
+  top: 31px;
+  background: #ccc;
 }
 
 .top .Nav .NavAll .mainFool .pets ul .pet-dog {
@@ -334,9 +335,11 @@ body {
 }
 
 .top .Nav .NavAll .mainFool .fenlei .fenlei_ul {
+  z-index: 99;
   position: absolute;
   top: 30px;
   left: -100px;
+  background: #ccc;
 }
 
 .top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li {
@@ -396,6 +399,7 @@ body {
 }
 
 .top .Nav .NavAll .mainFool .fenlei .fenlei_ul .fenlei-li h3 .FootAll {
+  background: #ccc;
   display: none;
   float: left;
   position: absolute;

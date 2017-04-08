@@ -6,23 +6,63 @@ define(['jquery','template'],function($,template){
         Body.prototype.show=function(){
             var self =this;
             var $index=0;
-             $('body').append(this.template.body());
+            $('body').append(this.template.body());
 
-             $('.title').on('mouseover','span',function(){
+            $('.title').on('mouseenter','span',function(){
                
+                $('.content').children('.content-l').children('.lei').remove();
+
+                var $page =$(this).index()+1;
+                $.ajax({
+                    type:'get',
+                    url:'../php/page.php?pageNo='+ $page,
+
+                    success:function(data){
+                        //console.log(data);
+                        var res = JSON.parse(data);
+                            //console.log(res);
+
+                            res.map((item)=>{
+                                var $div = $('<div>/');
+                                    $div.addClass('lei');
+                                $div[0].innerHTML = `
+
+                                    <img src=${item.img} alt=""><br>
+                                    <span class="tuijian">精品推荐</span>
+                                    <div class="biaoti">${item.title}</div>
+                                    <div class="price">
+                                        ￥<span>${item.price}</span>
+                                        <span>${item.old_price}</span>
+                                    </div>
+
+                                    <div class="gang"></div>
+                                    <a href='../html/page.html?id=${item.id}'>即将抢购</a>
+                                `;
+                                $('.content-l').append($div)
+                            })
+                    }
+                })
+              
                 $(this).children('h4').css({'font-size':'18px'}).children('div').show();
+
+               
+
                 $index=$(this).index();
                 $('.content').children('div').eq($index).show().siblings().hide();
-             }).on('mouseout','span',function(){
+                
+                
+                
+
+             }).on('mouseleave','span',function(){
                 $(this).children('h4').css({'font-size':'12px'}).children('div').hide();
                 
-             })
+            })
 
             $.ajax({
                 type:'get',
                 url:'../php/page.php',
                 success:function(data){
-                    console.log(data);
+                    //console.log(data);
                     var res = JSON.parse(data);
                         console.log(res);
 

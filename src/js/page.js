@@ -25,6 +25,7 @@ define(['jquery','template','top','footer'],function($,template,top,footer){
 
             self.addDel();
             self.loadmore();
+            self.addcar();
             $.ajax({
                 type:'get',
                 url:'../php/page.php',
@@ -43,9 +44,8 @@ define(['jquery','template','top','footer'],function($,template,top,footer){
         Page.prototype.GetRequest=function(){
 
             var self = this
-            var url ='http://localhost/day19/project/src/html/page.html?id=4' 
-           //var url = window.location.search; 
-            console.log(url); 
+           var url = window.location.search; 
+
             if (url.indexOf("?") != -1) {  
                 var str = url.substr(1);
                 var strArr = str.split('=');
@@ -61,7 +61,7 @@ define(['jquery','template','top','footer'],function($,template,top,footer){
 
             var self = this;
             var gid = self.GetRequest();
-          
+            console.log('bb')
             for(var i=0;i<res.length;i++){
                 if(res[i].id==gid){
                     var title =res[i].title;
@@ -70,7 +70,7 @@ define(['jquery','template','top','footer'],function($,template,top,footer){
                     var img =res[i].img;
                     var img_l =res[i].img_l;
                     var img_r =res[i].img_r;
-
+ console.log('cc')
                     $('.page_tit').html(title);
                     $('.page_olsprice span').html(price);
                     $('.page_price span').html(price);
@@ -135,7 +135,7 @@ define(['jquery','template','top','footer'],function($,template,top,footer){
             </div>
                 `)
         }
-
+        //懒加载
         Page.prototype.loadmore=function(){
            var pageNo=1;
             $.ajax({
@@ -177,12 +177,39 @@ define(['jquery','template','top','footer'],function($,template,top,footer){
                      console.log(pageNo);
                     $.ajax({
                         type:'get',
-                        url:'../php/loadmore.php?pageNo='+pageNo
+                        url:'../php/loadmore.php?pageNo='+pageNo,
+                        success:function(data){
+                   
+                            var res =JSON.parse(data);
+                            
+                            var $ul =$('<ul/>');
+                            $ul.css({
+                                'margin-top':100,
+                                'margin-left':250
+                            })
+                            console.log(res);
+                            res.forEach((item)=>{
+                                var $li =$('<li/>');
+                                $li[0].innerHTML=`<img src=${item.img} alt="" />`;
+                                $ul.append($li);
+                            })
+                            $('.page').append($ul);
+                            pageNo++;
+                            console.log(pageNo);
+                        }
                     })
                 
                     lastPage = pageNo;
                 }
             }
+        }
+
+        //点击加入购物车
+        Page.prototype.addcar=function(){
+            $('.shoppingcar').on('click',function(){
+                var $clone = $('page_r').clone(true);
+                
+            })
         }
 
         return Page

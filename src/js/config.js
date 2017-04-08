@@ -21,23 +21,15 @@ requirejs.config({
 // 在requireJS中，一个模块就是一个js文件
 // 引入模块的路径：
 requirejs(['jquery','top','carousel','body','page','footer'],function($,top,carousel,body,page,footer){
-	// var oTop=new top();
-	// 	oTop.init();
+	var oTop=new top();
+		oTop.init();
 
-	// var oCarousel = new carousel();
- //         oCarousel.init();
+	var oCarousel = new carousel();
+         oCarousel.init();
 
- //    var oBody=new body();
- //    	oBody.show();
+    var oBody=new body();
+    	oBody.show();
 
-
-
-    	
-
- 	 var oPage=new page();
-         oPage.init();
-
-
-
-	
+	var oFoot=new footer();
+        oFoot.init();
 });

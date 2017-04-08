@@ -171,7 +171,8 @@ body { color: #555; font-size: 12px; font-family: "宋体"; }
                     ul{
                        display:none;
                        position:absolute;
-                       top:20px;
+                       top:31px;
+                       background:#ccc;
                        .pet-dog{   
                             border-bottom:1px dashed;
                              width:200px;
@@ -272,11 +273,13 @@ body { color: #555; font-size: 12px; font-family: "宋体"; }
 
                     }
                     .fenlei_ul{
-                        
+                        z-index: 99;
                         position:absolute;
                         top:30px;
                         left: -100px;
+                        background:#ccc;
                         .fenlei-li{
+
                             width:200px;
                             height:50px;
                             border-top:1px solid green;
@@ -321,6 +324,7 @@ body { color: #555; font-size: 12px; font-family: "宋体"; }
                                 }
 
                                 .FootAll{
+                                    background:#ccc;
                                     display:none;
                                     float:left;
                                     position:absolute;

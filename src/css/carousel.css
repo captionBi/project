@@ -60,6 +60,7 @@ body {
 .Carousel .CarouselImg ul {
   width: 770px;
   height: 360px;
+  margin-left: 240px;
 }
 
 .Carousel .CarouselImg ul li {
@@ -75,6 +76,7 @@ body {
   position: absolute;
   top: 315px;
   left: 271px;
+  margin-left: 315px;
 }
 
 .Carousel .page span {
